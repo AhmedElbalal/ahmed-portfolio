@@ -48,6 +48,20 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
+
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-K7RB3TY201" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K7RB3TY201');
+      `,
+          }}
+        />
+
         {/* JSON-LD Person Schema */}
         <script
           type="application/ld+json"
@@ -57,17 +71,9 @@ export default function RootLayout({
               '@type': 'Person',
               name: 'Ahmed Elbalal',
               jobTitle: 'Frontend Developer',
-              url: 'https://ahmedaelbalal.netlify.app',
+              url: 'https://ahmedelbalal.dev',
               email: 'mailto:aelballal@yahoo.fr',
-              knowsAbout: [
-                'React',
-                'TypeScript',
-                'Tailwind CSS',
-                'Next.js',
-                'Framer Motion',
-                'Frontend Architecture',
-                'Performance Optimization',
-              ],
+              knowsAbout: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Framer Motion'],
               sameAs: ['https://github.com/AhmedElbalal'],
             }),
           }}
