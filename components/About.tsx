@@ -145,8 +145,8 @@ const About: React.FC = () => {
                   icons: [
                     { cls: 'fab fa-react', name: 'React' },
                     { cls: 'fab fa-js', name: 'TypeScript' },
-                    { cls: 'fab fa-html5', name: 'HTML5' },
-                    { cls: 'fab fa-css3-alt', name: 'CSS3' },
+                    { cls: 'fab fa-react', name: 'Next.js' },
+                    { cls: 'fab fa-css3-alt', name: 'Tailwind' },
                   ],
                 },
                 {
@@ -163,10 +163,10 @@ const About: React.FC = () => {
                   label: 'Currently Learning',
                   cls: 'learning',
                   icons: [
-                    { cls: 'fab fa-react', name: 'Next.js' },
                     { cls: 'fab fa-node-js', name: 'Node.js' },
                     { cls: 'fas fa-vial', name: 'Testing' },
                     { cls: 'fab fa-aws', name: 'AWS' },
+                    { cls: 'fas fa-database', name: 'PostgreSQL' },
                   ],
                 },
               ].map(({ label, cls, icons }) => (
