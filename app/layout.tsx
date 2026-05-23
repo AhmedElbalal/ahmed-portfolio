@@ -3,19 +3,19 @@ import './globals.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
 
 export const metadata: Metadata = {
-  title: 'Ahmed Elbalal | React Developer',
+  title: 'Ahmed Elbalal | Frontend Developer',
   description:
     'Frontend Developer specializing in React, TypeScript, and scalable web applications.',
-  metadataBase: new URL('https://ahmedaelbalal.netlify.app'),
+  metadataBase: new URL('https://ahmedelbalal.dev'),
   alternates: {
-    canonical: 'https://ahmedaelbalal.netlify.app',
+    canonical: 'https://ahmedelbalal.dev',
   },
   openGraph: {
     title: 'Ahmed Elbalal | Frontend Developer',
     description:
       'Frontend Developer specializing in React, TypeScript, and scalable web applications.',
     type: 'website',
-    url: 'https://ahmedaelbalal.netlify.app',
+    url: 'https://ahmedelbalal.dev',
     images: [
       {
         url: '/og-image.jpg',
