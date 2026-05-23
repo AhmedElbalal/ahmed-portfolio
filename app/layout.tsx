@@ -72,7 +72,7 @@ export default function RootLayout({
               name: 'Ahmed Elbalal',
               jobTitle: 'Frontend Developer',
               url: 'https://ahmedelbalal.dev',
-              email: 'mailto:aelballal@yahoo.fr',
+              email: 'mailto:ahmedelbalal@ahmedelbalal.dev',
               knowsAbout: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Framer Motion'],
               sameAs: ['https://github.com/AhmedElbalal'],
             }),
