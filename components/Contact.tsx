@@ -40,7 +40,7 @@ const Contact: React.FC = () => {
         <div className="contact-content">
           <div className="contact-info">
             {[
-              { icon: Phone, label: 'Phone', value: '+1 (438) 796-5224' },
+              { icon: Phone, label: 'Phone', value: '+1 (438) 796-●●●●' },
               { icon: Mail, label: 'Email', value: 'ahmedelbalal@ahmedelbalal.dev' },
               {
                 icon: MapPin,
