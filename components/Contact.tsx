@@ -68,21 +68,18 @@ const Contact: React.FC = () => {
             ))}
           </div>
 
-          <form className="contact-form" onSubmit={handleSubmit} data-netlify="true" name="contact">
-            <div className="form-group">
-              <label htmlFor="name">Name *</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleInputChange}
-                required
-                disabled={isLoading}
-              />
-            </div>
-            <input type="hidden" name="form-name" value="contact" />
-
+          <form className="contact-form" onSubmit={handleSubmit}>            <div className="form-group">
+            <label htmlFor="name">Name *</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleInputChange}
+              required
+              disabled={isLoading}
+            />
+          </div>
             <div className="form-group">
               <label htmlFor="email">Email *</label>
               <input

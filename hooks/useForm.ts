@@ -12,7 +12,7 @@ interface FormData {
 
 export function useForm() {
   const [isLoading, setIsLoading] = useState(false)
-  const [error, setError] = useState<string | null>(null)
+  const [error, setError,] = useState<string | null>(null)
   const [success, setSuccess] = useState(false)
 
   const submitForm = async (formData: FormData) => {
@@ -21,13 +21,10 @@ export function useForm() {
     setSuccess(false)
 
     try {
-      const response = await fetch('/', {
+      const response = await fetch('https://formspree.io/f/mykvdyqk', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams({
-          'form-name': 'contact',
-          ...formData,
-        }).toString(),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
       })
 
       if (!response.ok) throw new Error('Failed to send')
