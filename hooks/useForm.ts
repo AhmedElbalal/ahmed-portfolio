@@ -21,20 +21,16 @@ export function useForm() {
     setSuccess(false)
 
     try {
-      // Option A: EmailJS (install @emailjs/browser and configure)
-      // import emailjs from '@emailjs/browser'
-      // await emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData, 'YOUR_PUBLIC_KEY')
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams({
+          'form-name': 'contact',
+          ...formData,
+        }).toString(),
+      })
 
-      // Option B: Next.js API Route (create app/api/contact/route.ts)
-      // const res = await fetch('/api/contact', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify(formData),
-      // })
-      // if (!res.ok) throw new Error('Failed to send')
-
-      // Placeholder — replace with Option A or B above
-      await new Promise((resolve) => setTimeout(resolve, 1000))
+      if (!response.ok) throw new Error('Failed to send')
       setSuccess(true)
     } catch (err) {
       setError('Failed to send message. Please try again.')

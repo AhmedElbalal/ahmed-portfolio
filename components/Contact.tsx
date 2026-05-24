@@ -68,7 +68,7 @@ const Contact: React.FC = () => {
             ))}
           </div>
 
-          <form className="contact-form" onSubmit={handleSubmit}>
+          <form className="contact-form" onSubmit={handleSubmit} data-netlify="true" name="contact">
             <div className="form-group">
               <label htmlFor="name">Name *</label>
               <input
@@ -81,6 +81,7 @@ const Contact: React.FC = () => {
                 disabled={isLoading}
               />
             </div>
+            <input type="hidden" name="form-name" value="contact" />
 
             <div className="form-group">
               <label htmlFor="email">Email *</label>
