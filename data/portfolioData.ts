@@ -125,7 +125,7 @@ export const projects: Project[] = [
     liveUrl: 'https://uzmanstudios.netlify.app/',
     githubUrl: 'https://github.com/AhmedElbalal/Uzman-Studio-Website',
     challenge:
-      'Designing and developing a visually striking landing page that captures the creative studio\'s brand while ensuring fast loading times and smooth user interactions.',
+      "Designing and developing a visually striking landing page that captures the creative studio's brand while ensuring fast loading times and smooth user interactions.",
     solution:
       'Utilized Framer Motion for sophisticated animations, implemented modern CSS techniques including flexbox and grid, optimized images and assets, and created a mobile-first responsive design.',
     results: [
@@ -148,11 +148,12 @@ export const experiences: Experience[] = [
     position: 'Frontend Developer | Shopify & E-commerce',
     period: '2023 - Present',
     description: [
-      'Built and updated storefront UI components, product layouts, and responsive pages for e-commerce experiences.',
-      'Worked on frontend improvements focused on usability, layout consistency, and smoother customer journeys across desktop and mobile.',
-      'Troubleshot technical issues affecting storefront behavior, theme functionality, and overall user experience.',
+      'Developed and maintained Shopify storefront UI components using Liquid, JavaScript, and CSS3 — delivering responsive, cross-browser compatible product pages and collection layouts for multiple e-commerce clients.',
+      'Improved storefront performance and usability by refactoring theme templates, fixing layout inconsistencies, and streamlining customer journeys across desktop and mobile — resulting in smoother checkout flows.',
+      'Diagnosed and resolved frontend bugs affecting theme behavior, cart functionality, and third-party app integrations, reducing recurring issues and improving overall store reliability.',
+      'Collaborated directly with clients to translate business requirements into functional UI improvements, ensuring brand consistency and a polished user experience across all touchpoints.',
     ],
-    technologies: ['Shopify', 'JavaScript', 'HTML5', 'CSS3', 'Liquid'],
+    technologies: ['Shopify', 'Liquid', 'JavaScript', 'HTML5', 'CSS3', 'Git'],
   },
   {
     id: 2,
@@ -197,7 +198,7 @@ export const skills: SkillCategory[] = [
       { name: 'Web Performance', level: 80 },
       { name: 'Accessibility', level: 75 },
       { name: 'Cross-browser Compatibility', level: 85 },
-      { name: 'SEO Principles', level: 70 },
+      { name: 'SEO Principles', level: 75 },
     ],
   },
 ]
