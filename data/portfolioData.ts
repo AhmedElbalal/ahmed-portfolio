@@ -38,14 +38,37 @@ export interface HeroStat {
 
 // Hero Stats
 export const heroStats: HeroStat[] = [
-  { number: '5+', label: 'Projects Built' },
+  { number: '6+', label: 'Projects Built' },
   { number: '2+', label: 'Years Experience' },
-  { number: 'React', label: 'Core Focus' },
-  { number: 'UI', label: 'Performance Driven' },
+  { number: 'Full Stack', label: 'React + Node' },
+  { number: 'SaaS', label: 'Product Focus' },
 ]
 
 // Projects
 export const projects: Project[] = [
+  {
+    id: 6,
+    title: 'HOTELI — Cloud Hotel PMS',
+    description:
+      'A full-stack hotel property management system built from real hotel operations experience, including reservations, room assignment, folios, house accounts, night audit, ADR, occupancy, and operational reports.',
+    technologies: ['React', 'TypeScript', 'Node.js', 'Express', 'REST API', 'Vite', 'i18n'],
+    image: '/images/hoteli-dashboard.png',
+    liveUrl: '',
+    githubUrl: 'https://github.com/AhmedElbalal/hoteli-pms',
+    challenge:
+      'Designing a realistic cloud PMS workflow that connects front desk, night audit, accounting, rooms management, and reporting needs into one clear and user-friendly product experience.',
+    solution:
+      'Built a full-stack MVP with a React frontend and Node.js/Express API, including dashboard KPIs, reservation workflow, room assignment and unassignment, folios with tax breakdowns, house accounts, night audit locking, support tickets, audit logs, and multilingual UI support.',
+    results: [
+      'Created a domain-specific SaaS product based on real hotel operations experience',
+      'Implemented core PMS workflows including reservations, rooms, folios, house accounts, and night audit',
+      'Added operational reporting for revenue, in-house guests, arrivals, departures, and high-balance folios',
+      'Designed a multilingual interface for English, French, and Spanish users',
+    ],
+    performance: 'MVP',
+    users: 'Demo',
+    category: 'Full Stack SaaS',
+  },
   {
     id: 5,
     title: 'Shopify / E-commerce Operations Dashboard',
@@ -179,6 +202,16 @@ export const skills: SkillCategory[] = [
       { name: 'JavaScript', level: 90 },
       { name: 'HTML5', level: 95 },
       { name: 'CSS3', level: 90 },
+    ],
+  },
+  {
+    category: 'Backend & API',
+    items: [
+      { name: 'Node.js', level: 75 },
+      { name: 'Express', level: 75 },
+      { name: 'REST API', level: 80 },
+      { name: 'Authentication Flow', level: 70 },
+      { name: 'JSON Data Modeling', level: 75 },
     ],
   },
   {
