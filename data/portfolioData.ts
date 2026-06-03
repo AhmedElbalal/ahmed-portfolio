@@ -53,7 +53,7 @@ export const projects: Project[] = [
       'A full-stack hotel property management system built from real hotel operations experience, including reservations, room assignment, folios, house accounts, night audit, ADR, occupancy, and operational reports.',
     technologies: ['React', 'TypeScript', 'Node.js', 'Express', 'REST API', 'Vite', 'i18n'],
     image: '/images/hoteli-dashboard.png',
-    liveUrl: '',
+    liveUrl: 'https://hoteli-pms.netlify.app/',
     githubUrl: 'https://github.com/AhmedElbalal/hoteli-pms',
     challenge:
       'Designing a realistic cloud PMS workflow that connects front desk, night audit, accounting, rooms management, and reporting needs into one clear and user-friendly product experience.',
